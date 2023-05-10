@@ -10,19 +10,22 @@ html2canvas gets the screenshot from the DOM
 sharp gets the regions of interest
 
 <h2>Installation</h2>
-1. First install Tesseract OCR 
+
+<ol>
+
+<li>First install Tesseract OCR 
 https://tesseract-ocr.github.io/tessdoc/Installation.html
 
 If using windows, make sure to add Tesseract OCR to your path (Step 3 below)
 https://ironsoftware.com/csharp/ocr/blog/ocr-tools/tesseract-ocr-windows/
+</li>
+<li>npm install</li>
 
-2. npm install
+<li>node server.js</li>
 
-3. node server.js
+<li>In a browser open localhost:3000</li>
 
-4. In a browser open localhost:3000
-
-5. To get the broader internet, you can do something like
+<li>To get the broader internet, you can do something like
 
 delete this line from index.html
 <img class="image" src="/test_image.jpg" />
@@ -38,4 +41,5 @@ to some other setting (9 is to read text inside of a circle for example)
 
 for more details on page segementation modes see
 https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/
-
+</li>
+</ol>
