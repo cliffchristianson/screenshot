@@ -2,11 +2,9 @@
 This small program automates taking a screenshot of a webpage and extracting text from regions of the screenshot.
 
 
-Useful for parsing text from camera streams, tracking website errors, and other nifty uses.
-
 Javascript client with node/express backend
 
-Tesseract does the OCR and sharp generates the regions of interests from the screenshot
+Tesseract does the OCR and sharp generates the regions of interest from the screenshot
 
 html2canvas gets the screenshot from the DOM
 
@@ -62,5 +60,5 @@ to your desired location and size
 </li>
 <li>To extract the text from the sample image, it is setup by default to run on windows using C:\javascript\screenshot as your directory.  It must run on a 1920x1080 screen at 100% zoom.  
 
-Of course you can install on any OS in any folder and use any sample image or website or video or camera stream, etc</li>
+Of course you can install on any OS in any folder and just change the server.js and index.html files.</li>
 </ol>
