@@ -17,9 +17,13 @@ https://tesseract-ocr.github.io/tessdoc/Installation.html
 If using windows, make sure to add Tesseract OCR to your path (Step 3 below)
 https://ironsoftware.com/csharp/ocr/blog/ocr-tools/tesseract-ocr-windows/
 </li>
-<li>npm install</li>
+<li>Clone this repo and run 
+npm install
+</li>
 
-<li>node server.js</li>
+<li>Next run
+node server.js
+</li>
 
 <li>In a browser open localhost:3000</li>
 
@@ -51,7 +55,7 @@ https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-expl
     }).toFile("interestRegion.jpg");
     
     
-    to your desired location and size
+to your desired location and size
 </li>
 </ol>
 
