@@ -28,7 +28,7 @@ https://ironsoftware.com/csharp/ocr/blog/ocr-tools/tesseract-ocr-windows/
 <li>To get the broader internet, you can do something like
 
 delete this line from index.html
-<img class="image" src="/test_image.jpg" />
+&lt;img class="image" src="/test_image.jpg" /&gt;
 
 add this line to index.html
 <iframe src="full url here"></iframe>
