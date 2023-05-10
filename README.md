@@ -1,6 +1,7 @@
 <h2>Screenshot OCR</h2>
 This small program automates taking a screenshot of a webpage and extracting text from regions of the screenshot.
 
+
 Useful for parsing text from camera streams, tracking website errors, and other nifty uses.
 
 Javascript client with node/express backend
