@@ -1,5 +1,7 @@
 <h2>Screenshot OCR</h2>
-This small program will take a screenshot of a webpage and extract text from regions of the screenshot.
+This small program automates taking a screenshot of a webpage and extracting text from regions of the screenshot.
+
+Useful for parsing text from camera streams, tracking website errors, and other nifty uses.
 
 Javascript client with node/express backend
 
@@ -57,5 +59,5 @@ https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-expl
     
 to your desired location and size
 </li>
-<li>To extract the text from the sample image, it must run on a 1920x1080 screen at 100% zoom</li>
+<li>To extract the text from the sample image, you must run on windows using C:\javascript\screenshot as your directory.  It must run on a 1920x1080 screen at 100% zoom.  Of course you can install anywhere and use any sample image or website or whatever you would like</li>
 </ol>
