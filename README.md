@@ -7,8 +7,6 @@ Tesseract does the OCR and sharp generates the regions of interests from the scr
 
 html2canvas gets the screenshot from the DOM
 
-sharp gets the regions of interest
-
 <h2>Installation</h2>
 
 <ol>
