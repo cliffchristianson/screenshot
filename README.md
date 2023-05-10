@@ -30,7 +30,7 @@ https://ironsoftware.com/csharp/ocr/blog/ocr-tools/tesseract-ocr-windows/
 delete this line from index.html
 &lt;img class="image" src="/test_image.jpg" /&gt;
 
-add this line to index.html
+add replace with
 <iframe src="full url here"></iframe>
 
 To read lines of text change the tesseract psm (page segmentation mode)
