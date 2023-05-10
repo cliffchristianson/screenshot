@@ -41,12 +41,16 @@ for more details on page segementation modes see
 https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/
 </li>
 <li>To change the regions of interest, in server.js change
+    
+    
     <code>sharp( "outputImage.png" ).extract({
         left: 630, 
         top: 200,
         width:350,
         height: 350
     }).toFile("interestRegion.jpg");</code>
+    
+    
     to your desired location and size
 </li>
 </ol>
