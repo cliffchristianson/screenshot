@@ -57,5 +57,5 @@ https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-expl
     
 to your desired location and size
 </li>
+<li>To extract the text from the sample image, it must run on a 1920x1080 screen at 100% zoom</li>
 </ol>
-
