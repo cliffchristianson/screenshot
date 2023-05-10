@@ -34,8 +34,8 @@ delete this line from index.html
 
 add replace with
 <iframe src="full url here"></iframe>
-
-To read lines of text change the tesseract psm (page segmentation mode)
+</li>
+<li>To read lines of text change the tesseract psm (page segmentation mode)
 
 --psm 9
 
