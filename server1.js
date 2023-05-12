@@ -58,7 +58,7 @@ app.listen(3000, ()=> {
         } ).then((data) => {
             if( DBG ) console.log("Cliff here with getsourcescreenshot=");
             if( DBG ) console.log(data.imageData.substring(0,100));
-            // processScreenShot( data.imageData );
+            processScreenShot( data.imageData );
         });
     }
     const processScreenShot = function( imageData ) {
