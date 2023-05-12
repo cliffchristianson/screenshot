@@ -25,7 +25,8 @@ app.listen(3000, ()=> {
     console.log( __dirname );
     const obs = new OBSWebSocket();
 
-    obs.connect('ws://192.168.1.19:4455', 'PassW0rd!')
+    //obs.connect('ws://192.168.1.19:4455', 'PassW0rd!')
+    obs.connect('ws://192.168.1.51:4455', 'PassW0rd!')
     .then((data)=> {
         if( DBG ) console.log("obs is connected");
         if( DBG ) console.log(data);
@@ -67,7 +68,7 @@ app.listen(3000, ()=> {
         if( DBG ) console.log(base64Data.substring(0,100));
         const imageBuffer = Buffer.from(base64Data, "base64");
 
-        fs.writeFileSync("outputImage.png", imageBuffer, 'base64', function(err) {
+        fs.writeFileSync("outputImage.jpg", imageBuffer, 'base64', function(err) {
             if( DBG ) console.log("Cliff here with error=");
             if( DBG ) console.log(err);
         }); 
@@ -78,7 +79,7 @@ app.listen(3000, ()=> {
 */
         
         // open screenshot image and create a region of interest
-        sharp( "outputImage.png" ).extract({
+        sharp( "outputImage.jpg" ).extract({
             left: 782, 
             top: 125,
             width:30,
@@ -93,7 +94,7 @@ app.listen(3000, ()=> {
         .threshold(128)
         .toFile("interestRegion_1.jpg");
         
-        sharp( "outputImage.png" ).extract({
+        sharp( "outputImage.jpg" ).extract({
             left: 898, 
             top: 125,
             width:30,
@@ -108,7 +109,7 @@ app.listen(3000, ()=> {
         .threshold(128)
         .toFile("interestRegion_2.jpg");
 
-        sharp( "outputImage.png" ).extract({
+        sharp( "outputImage.jpg" ).extract({
             left: 1013, 
             top: 125,
             width:30,
@@ -123,7 +124,7 @@ app.listen(3000, ()=> {
         .threshold(128)
         .toFile("interestRegion_3.jpg");
 
-        sharp( "outputImage.png" ).extract({
+        sharp( "outputImage.jpg" ).extract({
             left: 1127, 
             top: 125,
             width:30,
