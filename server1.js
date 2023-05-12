@@ -25,8 +25,8 @@ app.listen(3000, ()=> {
     console.log( __dirname );
     const obs = new OBSWebSocket();
 
-    //obs.connect('ws://192.168.1.19:4455', 'PassW0rd!')
-    obs.connect('ws://192.168.1.51:4455', 'PassW0rd!')
+    obs.connect('ws://192.168.1.19:4455', 'PassW0rd!')
+    // obs.connect('ws://192.168.1.51:4455', 'PassW0rd!')
     .then((data)=> {
         if( DBG ) console.log("obs is connected");
         if( DBG ) console.log(data);
