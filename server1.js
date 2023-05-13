@@ -25,8 +25,8 @@ app.listen(3000, ()=> {
     console.log( __dirname );
     const obs = new OBSWebSocket();
 
-    obs.connect('ws://192.168.1.19:4455', 'PassW0rd!')
-    // obs.connect('ws://192.168.1.51:4455', 'PassW0rd!')
+    // obs.connect('ws://192.168.1.19:4455', 'PassW0rd!')
+    obs.connect('ws://192.168.1.51:4455', 'PassW0rd!')
     .then((data)=> {
         if( DBG ) console.log("obs is connected");
         if( DBG ) console.log(data);
@@ -81,13 +81,13 @@ app.listen(3000, ()=> {
         // open screenshot image and create a region of interest
         sharp( "outputImage.jpg" ).extract({
             left: 782, 
-            top: 125,
+            top: 132,
             width:30,
             height: 27
         })
         .resize({
-            width:300,
-            height: 280
+            width:150,
+            height: 140
         })
         .greyscale()
         .negate()
@@ -96,13 +96,13 @@ app.listen(3000, ()=> {
         
         sharp( "outputImage.jpg" ).extract({
             left: 898, 
-            top: 125,
+            top: 132,
             width:30,
             height: 27
         })
         .resize({
-            width:300,
-            height: 280
+            width:150,
+            height: 140
         })
         .greyscale()
         .negate()
@@ -111,13 +111,13 @@ app.listen(3000, ()=> {
 
         sharp( "outputImage.jpg" ).extract({
             left: 1013, 
-            top: 125,
+            top: 132,
             width:30,
             height: 27
         })
         .resize({
-            width:300,
-            height: 280
+            width:150,
+            height: 140
         })
         .greyscale()
         .negate()
@@ -126,13 +126,13 @@ app.listen(3000, ()=> {
 
         sharp( "outputImage.jpg" ).extract({
             left: 1127, 
-            top: 125,
+            top: 132,
             width:30,
             height: 27
         })
         .resize({
-            width:300,
-            height: 280
+            width:150,
+            height: 140
         })
         .greyscale()
         .negate()
@@ -181,7 +181,13 @@ app.listen(3000, ()=> {
                 fs.unlinkSync(__dirname + "/" + textFile);
             }
         });
-        exec("tesseract " + interestImage + " " + textFile.replace('.txt', '') + " --oem 1 --psm 8 -c tessedit_char_whitelist=0123456789", (error, stdout, stderr) => {
+        //exec("tesseract " + interestImage + " " + textFile.replace('.txt', '') + " --oem 1 --psm 8 -c tessedit_char_whitelist=0123456789", (error, stdout, stderr) => {
+        exec("tesseract " 
+                + interestImage + " " 
+                + textFile.replace('.txt', '') 
+                + " --oem 1"
+                + " --psm 8"
+                + " -c tessedit_char_whitelist=0123456789", (error, stdout, stderr) => {
             if(error){
                 if( DBG ) console.log(`error: ${error.message}`);
             }

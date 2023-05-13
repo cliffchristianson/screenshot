@@ -1,8 +1,16 @@
 /call.txt
 /game.txt
 /interestRegion.jpg
-/interestRegion2.jpg
+/interestRegion_1.jpg
+/interestRegion_2.jpg
+/interestRegion_3.jpg
+/interestRegion_4.jpg
+/call1.txt
+/call2.txt
+/call3.txt
+/call4.txt
 /outputImage.png
+/outputImage.jpg
 /node_modules/
 /package-lock.json
 /.gitconfig
